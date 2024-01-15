@@ -19,7 +19,7 @@ Causes working directory to change to the folder specified (lecture1, in this ca
 `cd` with argument as path to folder (lecture1 terminal):
 Causes an error because trying to change to lecture1 terminal within the terminal itself. Does not recognize lecture1 subfolder within the lecture1 folder.
 
-![Image](lab1,cse15Lscreenshot19)
+![Image](lab1,cse15Lscreenshot19.png)
 
 3) `cd` with argument as path to file (main terminal):
 Causes an error because the file is not a directory that can be changed to.

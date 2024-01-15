@@ -24,7 +24,7 @@ Causes an error because trying to change to lecture1 terminal within the termina
 3) `cd` with argument as path to file (main terminal):
 Causes an error because the file is not a directory that can be changed to.
 
-![Image](lab1,cse15Lscreenshot4)
+![Image](lab1,cse15Lscreenshot4.png)
 
 `cd` with argument as path to file (lecture1 terminal):
 Causes an error because the file is not a directory that can be changed to.

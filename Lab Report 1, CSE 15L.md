@@ -61,6 +61,27 @@ Gives Hello.java because `ls` command used on a file confirms the file's existen
 
 ![Image](lab1,cse15Lscreenshot11.png)
 
+7) `cat` with no argument (main terminal):
+Running this command with no argument allows the user to input text into the terminal. Whatever text is inputted, is repeated in the next line. In this case, "Hey" was entered and repeated on the next line.
+
+![Image](lab1,cse15Lscreenshot22.png)
+
+`cat` with no argument (lecture1 terminal):
+Causes the same result as with the main terminal. Repeats the user's input.
+
+![Image](lab1,cse15Lscreenshot25.png)
+
+8) `cat` with argument as path to folder (main terminal):
+Running this command with the argument as path to a folder just confirms whether that file exists in the immediate working directory, which it does, in this case.
+
+![Image](lab1,cse15Lscreenshot23.png)
+
+`cat` with argument as path to folder (lecture1 terminal):
+This command returns that lecture1 is not an existing object eithin the lecture1 folder. This makes sens because this command is called from eithin the lecture1 terminal, so it only looks within lecture1, not outside.
+
+![Image](lab1,cse15Lscreenshot24.png)
+
+9) `cat` with argument as path to file (main terminal):
 
 
 

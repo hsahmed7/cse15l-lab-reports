@@ -82,8 +82,14 @@ This command returns that lecture1 is not an existing object eithin the lecture1
 ![Image](lab1,cse15Lscreenshot24.png)
 
 9) `cat` with argument as path to file (main terminal):
+Produces an error message. `cat` does not recognize the Hello.java file within the main terminal. In the main terminal itself, there is no Hello.java file, although there is the lecture1 folder, which contains this file, and becausze the cat command can only penetrate through 1 "layer", the computer believes that the Hello.java file does not exist.
 
+![Image](lab1,cse15Lscreenshot26.png)
 
+`cat` with argument as path to file (lecture1 terminal):
+Gives the contents and code of the Hello.java file.
+
+![Image](cse15L,screenshot27.png)
 
 
 

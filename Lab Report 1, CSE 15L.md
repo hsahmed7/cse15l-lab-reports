@@ -89,7 +89,7 @@ Produces an error message. `cat` does not recognize the Hello.java file within t
 `cat` with argument as path to file (lecture1 terminal):
 Gives the contents and code of the Hello.java file.
 
-![Image](cse15L,screenshot27.png)
+![Image](lab1,cse15Lscreenshot27.png)
 
 
 

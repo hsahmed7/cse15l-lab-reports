@@ -1,4 +1,4 @@
-# Lab Report CSE 15L
+# Lab Report 1 CSE 15L
 Here are the commands `cd`, `ls`, and `cat`, used with no argument, argument with path to folder, and argument with path to file. The results are shown when the command is done in both the home directory and the lecture1 directory.
 
 1) ___`cd` with no argument (from home directory):___

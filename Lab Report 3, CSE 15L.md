@@ -1,4 +1,4 @@
-# Report #2 For CSE 15L
+# Report #3 For CSE 15L
 
 The grep command has many uses. Four of these uses are listed below.
 
@@ -59,7 +59,7 @@ public class Server {
 }
 
 ```
-2. The grep command can also be used to return files that end or begin with a certain string. The general format for finding lines that begin with a certain string is `grep '^[string]' [filename]`. For finding lines that end with a certain string: `grep '[string]$' [filename]`. In Example 1, the grep command is used to find lines in Server.java that start with a lowercase "p". In Example 2, the grep command is used to find lines that end with the letter "r".
+2. The grep command can also be used to return files that end or begin with a certain string. The general format for finding lines that begin with a certain string is `grep '^[string]' [filename]`. For finding lines that end with a certain string: `grep '[string]$' [filename]`. In Example 1, the grep command is used to find lines in Server.java that start with a lowercase "p". In Example 2, the grep command is used to find lines that end with the letter "r". This grep command-line option is useful because it further enables the user to filter search results. If the user remembers that one of the lines of code starts with the word "System", but is having trouble finding that code snippet manually, then the user can use this method to easily find the code.
 
 Example 1
 ```
@@ -74,7 +74,7 @@ $ grep 'r$' Server.java
             // form the return string and write it on the browser
         //start the server
 ```
-3. Sometimes, a user may want to search for special characters.Special character, or metacharacters, are characters that are often used in commands. For example, the `^` and the `$` are used to represent the beginning or end of a line, as seen in the previous bullet point.To make the computer understand that you want to literally search for those characters as strings in a file, you need to put a backslash before the metacharacter. For example,  `grep ^\.` gives all the lines that begin with a period.(The caret means search the beginning of the line, and because the dot has a backslash before it,the computer searches for the dot,rather than the caret `^`.If the backslash was put before both the caret and the dot, then it would search for both the caret and dot, and it would search everywhere in the file not just at the beginning.)
+3. Sometimes, a user may want to search for special characters. Special character, or metacharacters, are characters that are often used in commands. For example, the `^` and the `$` are used to represent the beginning or end of a line, as seen in the previous bullet point.To make the computer understand that you want to literally search for those characters as strings in a file, you need to put a backslash before the metacharacter. In Example 1,  `grep ^\.` gives all the lines that begin with a period.(The caret means search the beginning of the line, and because the dot has a backslash before it, the computer searches for the dot, rather than the caret `^`. If the backslash was put before both the caret and the dot, then it would search for both the caret and dot, and it would search everywhere in the file not just at the beginning.) In Example 2, the grep command is used to find the caret (^) symbol in the file TestDocSearch.java, and because there are no lines containing this symbol, no lines are returned. This grep command-line option is useful for searching for metacharacters properly.
 
 Example 1
 ```
@@ -113,7 +113,7 @@ $ grep '\^' TestDocSearch.java
 ```
 
 
-4. The grep command can be used as a filter.The format for this is `ls -l *.txt | grep Sep`. This command finds all text files with the “Sep” string in the description of the file that the `ls -l *.txt` command prints to the terminal, but it does not find this string within the file itself.
+4. The grep command can be used as a filter. The format for this is `[command] | grep [String]`. This use of grep takes the output of any command, and gives it over to grep command to search the text for the String. In Example 1, the grep command finds all text files with the “Sep” string in the description of the file that the `ls -l *.txt` command prints to the terminal. The grep command here is used to find files that were created in September. In Example 2, the grep command is used to search for a specific number, which is only in one line of the `ls` output. This grep command-line option is useful because it allows you to not only search the text within files, but also search text printed to the terminal by other commands (which may print out a lot of text, so it can be useful to search for specific keywords).
 
 Example 1
 ```

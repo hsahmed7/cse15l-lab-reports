@@ -2,7 +2,7 @@
 
 The grep command has many uses. Four of these uses are listed below.
 
-1. The grep command can be used to search for lines in a file without a certain string. The format  to use grep in this way is `grep -v [string] *` where [string] is the string that you input directly without quotes (if it is a single-word string). The asterisk is specific to this case, and means that the grep command should search on all the files in the working directory.
+1. The grep command can be used to search for lines in a file that do not contain a certain string. The format to use grep in this way is `grep -v [string] [filename]` where the string can be inputted directly without quotations if it is a single-word string. In Example 1, the grep command is used to find the lines in Server.java that do not contain the letter "e". In Example 2, the grep command is used to find all the lines in Server.java that do not contain a semicolon(;). This command-line option is useful because it allows the user to filter the output and look for something specific.
 
 Example 1
 ```
@@ -59,7 +59,7 @@ public class Server {
 }
 
 ```
-2. The grep command can also be used to return files that end or begin with a certain string. For example, the format for finding lines that start with the letter b, in a file named list is `grep ‘^b’ list`. For finding lines that end with b: `grep ‘b$’ list`.
+2. The grep command can also be used to return files that end or begin with a certain string. The general format for finding lines that begin with a certain string is `grep '^[string]' [filename]`. For finding lines that end with a certain string: `grep '[string]$' [filename]`. In Example 1, the grep command is used to find lines in Server.java that start with a lowercase "p". In Example 2, the grep command is used to find lines that end with the letter "r".
 
 Example 1
 ```

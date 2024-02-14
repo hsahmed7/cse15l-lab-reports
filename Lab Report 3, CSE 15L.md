@@ -1,5 +1,75 @@
 # Report #3 For CSE 15L
 
+## Part 1: Bugs
+The buggy program does not have the reverseInPlace method implemented correctly. The results of a Junit Test are shown below:
+
+The JUnit test code:
+```
+import static org.junit.Assert.*;
+import org.junit.*;
+
+public class ArrayTests {
+  @Test 
+	public void testReverseInPlace2() {
+    int[] input1 = {8,3,4,6 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 6,4,3,8 }, input1);
+	}
+}
+
+```
+
+The code for the method implementation:
+
+```
+public class ArrayExamples {
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+}
+
+```
+
+The command-line input and the output:
+
+```
+JUnit version 4.13.2
+.E
+Time: 0.008
+There was 1 failure:
+1) testReverseInPlace2(ArrayTests)
+arrays first differed at element [2]; expected:<3> but was:<4>
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+        at org.junit.Assert.internalArrayEquals(Assert.java:534)
+        at org.junit.Assert.assertArrayEquals(Assert.java:418)
+        at org.junit.Assert.assertArrayEquals(Assert.java:429)
+        at ArrayTests.testReverseInPlace2(ArrayTests.java:16)
+        ... 30 trimmed
+Caused by: java.lang.AssertionError: expected:<3> but was:<4>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+        ... 36 more
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+```
+
+
+
+
+
+
+
+## Part 2: Researching Commands
+
 The grep command has many uses. Four of these uses are listed below.
 
 1. The grep command can be used to search for lines in a file that do not contain a certain string. The format to use grep in this way is `grep -v [string] [filename]` where the string can be inputted directly without quotations if it is a single-word string. In Example 1, the grep command is used to find the lines in Server.java that do not contain the letter "e". In Example 2, the grep command is used to find all the lines in Server.java that do not contain a semicolon(;). This command-line option is useful because it allows the user to filter the output and look for something specific.

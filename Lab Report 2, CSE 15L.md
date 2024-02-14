@@ -4,25 +4,8 @@
 Part 1:
 
 
-import java.net.URI;
-import java.util.ArrayList;
-import java.io.IOException;
-
-class ChatServer {
-    ///add-message?s=<string>&user=<string>
-    public string takeURL(URI url){
-        if (url.getPath().contains("/add-message")){
-            String[] parameters = url.getQuery().split("="){
-                
-            }
-
-        }
-
-    }
 
 
-
-}
 
 
 

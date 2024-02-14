@@ -1,7 +1,7 @@
 # Report #3 For CSE 15L
 
 ## Part 1: Bugs
-The buggy program does not have the reverseInPlace method implemented correctly. The results of a Junit Test are shown below:
+The buggy program does not have the reverseInPlace method implemented correctly. The results of a failed Junit Test are shown below:
 
 The JUnit test code:
 ```
@@ -93,6 +93,10 @@ OK (1 test)
 
 The buggy code for the implementation of the method is the same as shown in the code block for the failed test.
 
+
+__Symptoms__
+
+
 The symptoms of the two tests are shown below:
 
 The JUnit test code for testReverseInPlace and testReverseInPlace2:
@@ -126,7 +130,9 @@ The command-line input and the output:
 ![Image](lab5,cse15Lscreenshot20.png)
 
 
-The bug in the program is that the implementation code does not reverse the second half of the array.
+__Bug__
+
+The bug in the program is that the implementation code does not traverse the second half of the array.
 
 The code before the bug is fixed:
 

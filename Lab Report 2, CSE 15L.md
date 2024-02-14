@@ -56,6 +56,8 @@ class ChatServer {
 
 ```
 
+Code also implements the URLHandler interface, which is contained in the file Server.java, provided to us for the lab.
+
 Part 2:
 
 Screenshots of public and private ssh keys:

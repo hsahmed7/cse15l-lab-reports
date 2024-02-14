@@ -9,7 +9,7 @@ Part 1:
 ![Image](lab3,cse15Lscreenshot20.png)
 
 ## Code:
-
+```
 import java.net.URI;
 import java.util.ArrayList;
 import java.io.IOException;
@@ -54,7 +54,7 @@ class ChatServer {
 }
 
 
-
+```
 
 Part 2:
 

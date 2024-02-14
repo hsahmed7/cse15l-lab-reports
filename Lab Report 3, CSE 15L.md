@@ -119,36 +119,45 @@ public class ArrayTests {
 }
 
 ```
+
 The command-line input and the output:
 
-```
-JUnit version 4.13.2
-.E.
-Time: 0.011
-There was 1 failure:
-1) testReverseInPlace2(ArrayTests)
-arrays first differed at element [2]; expected:<3> but was:<4>
-        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
-        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
-        at org.junit.Assert.internalArrayEquals(Assert.java:534)
-        at org.junit.Assert.assertArrayEquals(Assert.java:418)
-        at org.junit.Assert.assertArrayEquals(Assert.java:429)
-        at ArrayTests.testReverseInPlace2(ArrayTests.java:16)
-        ... 30 trimmed
-Caused by: java.lang.AssertionError: expected:<3> but was:<4>
-        at org.junit.Assert.fail(Assert.java:89)
-        at org.junit.Assert.failNotEquals(Assert.java:835)
-        at org.junit.Assert.assertEquals(Assert.java:120)
-        at org.junit.Assert.assertEquals(Assert.java:146)
-        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
-        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
-        ... 36 more
 
-FAILURES!!!
-Tests run: 2,  Failures: 1
+![Image](lab5,cse15Lscreenshot20.png)
+
+
+The bug in the program is that the implementation code does not reverse the second half of the array.
+
+The code before the bug is fixed:
+
+```
+public class ArrayExamples {
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+}
 
 ```
 
+The code after the bug is fixed:
+
+```
+public class ArrayExamples {
+
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+      int f = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length-i-1] = f;
+    }
+  }
+}
+
+```
+
+The problem with the code is that it traversed the first half of the list, changing the element values for the indices 0 to arr.length/2, and then when the code traversed the second half of the list, the values of the first half are already changed, so the second half of the array is not updated. The fix that was made was, first of all, to traverse change the for loop statement to only traverse the first half of the array. Also, the original values stored in the first half of the array are saved by assigning them to the variable f, so that the variable f can later be used to update the values of the second half of the list.
 
 
 

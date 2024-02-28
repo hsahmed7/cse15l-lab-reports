@@ -31,6 +31,7 @@ Comments: The keys pressed were "ssh hsahmed@ieng6.ucsd.edu" and then <enter>. T
 
 
 6) Step 9: Commit and push the changes:
+   
    ![Image](lab7,cse15Lscreenshot6.png)
 
    Comments: The keys pressed were "git add ListExamples.java", and then "git push". This caused the computer to add the updated version of the ListExamples.java file.

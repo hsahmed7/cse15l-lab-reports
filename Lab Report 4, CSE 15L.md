@@ -17,7 +17,7 @@ Comments: The keys pressed were `ssh hsahmed@ieng6.ucsd.edu` and then `<enter>`.
    Comments: The keys pressed were first `cd lab7 + <enter>`, and then `bash test.sh + <enter>`. This caused the computer to run the JUnit tests, but it seems like there must be something wrong with the way that I entered the command, the working directory, or some other issue, because the actual output is different than expected. The JUnit test encountered a compilation error.
 
 
-4) Step 7: Edit the ListExamples.java file to pass the tests:
+4) Step 7: Edit the ListExamples.java file in the vim editor, in order to pass the tests:
    ![Image](lab7,cse15Lscreenshot4.png)
 
    Comments: The keys pressed were first `vim ListExamples.java`, and then ` [j] + [j] + [j] + [j] + x + i + [2] + <esc> + :wq `. This caused the computer to change `index1 += 1;` to `index2 += 1;`. The four `j`'s brought the cursor down to the area that needed to be edited, and then the `x` deleted the `1` in `index1`. The `i` entered the computer into insert mode, and the button for `2` was pressed to change `index1` into `index2`. The `<esc>` button was pressed in order to go back to Normal Mode. The `:wq` was pressed to save changes and close the vim editor.

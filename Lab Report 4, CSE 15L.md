@@ -24,6 +24,7 @@ Comments: The keys pressed were "ssh hsahmed@ieng6.ucsd.edu" and then <enter>. T
 
 
 5) Step 8: Run the test to demonstrate that it will succeed:
+   
    ![Image](lab7,cse15Lscreenshot5.png)
 
    Comments: The keys pressed were "bash test.sh + <enter>". This caused the computer to run the JUnit tests, but there is a compilation error.

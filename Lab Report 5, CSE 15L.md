@@ -16,7 +16,15 @@ guess is either that Double.parseInt is the wrong method to use here, or that I 
 ![Image](lab9,cse15Lscreenshot1.png)
 
 
+
+
+
+
 ![Image](lab9,cse15Lscreenshot2.png)
+
+
+
+
 
 
 ![Image](lab9,cse15Lscreenshot3.png)

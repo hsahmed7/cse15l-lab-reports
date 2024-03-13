@@ -12,7 +12,7 @@ Hello,
 
 I am having issues implementing the function 'Add'. This method is supposed to take the String elements in an array (which all contain numeric text),
 and add the numbers in the array together,and then return the result. However, there is a compile error. The error message says that I cannot convert 
-an 'int' into a `String`. But this does not make sense because I am trying to convert a `String` into a `Double`, not an `int` type into a `String`. My best 
+an `int` into a `String`. But this does not make sense because I am trying to convert a `String` into a `Double`, not an `int` type into a `String`. My best 
 guess is either that `Double.parseDouble` is the wrong method to use here, or that I am doing the conditions for the for-loop wrong. What do you think?
 
 (I have attached screenshots of the symptom and code below.)
@@ -50,7 +50,7 @@ in an `int` (the index `i`), and so the computer probably thinks you are somehow
 
 
 
-**Reply of Student: **
+**Reply of Student:**
 
 
 Thank you. I realized that I passed in an invalid argument into the `Double.parseDouble` method. I fixed the bug, and here are screenshots of my successfully completed code. Thank you for your help.
